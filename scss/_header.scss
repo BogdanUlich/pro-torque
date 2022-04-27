@@ -1,0 +1,46 @@
+.header {
+    background: $background;
+    padding: 17px 0 7px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    &__logo {
+        margin: 0 auto;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        display: none;
+    }
+    &__search {
+        cursor: pointer;
+    }
+    &__links {
+        display: flex;
+        gap: 12px;
+    }
+    &__link {
+        padding: 8px 12px;
+        color: $dark;
+        font-size: 18px;
+        border-radius: 2px;
+        transition: 0.1s linear;
+        &:hover {
+            background: $warning;
+            color: $white;
+        }
+    }
+    &__user {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    &__cart {
+        cursor: pointer;
+    }
+}

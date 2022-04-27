@@ -1,44 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro torque</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.min.css">
-</head>
-<body>
-    <header class="header">
-        <a href="" class="header__logo">
-            <img src="./assets/img/header/logo-dark.png" alt="">
-        </a>
-        <div class="header__nav">
-            <div class="header__search">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.7797 22.7203L17.1469 16.0875C18.6094 14.3813 19.4578 12.1734 19.4578 9.75C19.4578 4.36406 15.0923 0 9.70782 0C4.32329 0 0 4.36547 0 9.75C0 15.1345 4.36501 19.5 9.70782 19.5C12.1303 19.5 14.3414 18.6112 16.0453 17.1492L22.6781 23.782C22.8656 23.925 23.0578 24 23.25 24C23.4422 24 23.6338 23.9268 23.7802 23.7803C24.075 23.4891 24.075 23.0109 23.7797 22.7203ZM9.75 18C5.16094 18 1.50001 14.2969 1.50001 9.75C1.50001 5.20312 5.16094 1.5 9.75 1.5C14.3391 1.5 18 5.16094 18 9.75C18 14.3391 14.2969 18 9.75 18Z" fill="#2C3038"/>
-                </svg>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pro torque</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.min.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container container">
+                <a href="" class="header__logo">
+                    <img src="./assets/img/header/logo-dark.png" alt="logo" />
+                </a>
+                <div class="header__nav">
+                    <div class="header__menu">
+                        <svg width="25" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.1071 2H0.892857C0.399777 2 0 1.55 0 1C0 0.45 0.399777 0 0.892857 0H24.1071C24.5982 0 25 0.45 25 1C25 1.55 24.5982 2 24.1071 2ZM24.1071 10H0.892857C0.399777 10 0 9.55 0 9C0 8.45 0.399777 8 0.892857 8H24.1071C24.5982 8 25 8.45 25 9C25 9.55 24.5982 10 24.1071 10Z"
+                                fill="#2C3038"
+                            />
+                        </svg>
+                    </div>
+
+                    <div class="header__search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.7797 22.7203L17.1469 16.0875C18.6094 14.3813 19.4578 12.1734 19.4578 9.75C19.4578 4.36406 15.0923 0 9.70782 0C4.32329 0 0 4.36547 0 9.75C0 15.1345 4.36501 19.5 9.70782 19.5C12.1303 19.5 14.3414 18.6112 16.0453 17.1492L22.6781 23.782C22.8656 23.925 23.0578 24 23.25 24C23.4422 24 23.6338 23.9268 23.7802 23.7803C24.075 23.4891 24.075 23.0109 23.7797 22.7203ZM9.75 18C5.16094 18 1.50001 14.2969 1.50001 9.75C1.50001 5.20312 5.16094 1.5 9.75 1.5C14.3391 1.5 18 5.16094 18 9.75C18 14.3391 14.2969 18 9.75 18Z"
+                                fill="#2C3038"
+                            />
+                        </svg>
+                    </div>
+
+                    <nav class="header__links">
+                        <a href="" class="header__link">Torque Converters</a>
+                        <a href="" class="header__link">Flexplates</a>
+                        <a href="" class="header__link">Apparel & Gear</a>
+                        <a href="" class="header__link">Service</a>
+                        <a href="" class="header__link">Tech</a>
+                        <a href="" class="header__link">Dealers</a>
+                        <a href="" class="header__link">Racers</a>
+                        <a href="" class="header__link">News</a>
+                        <a href="" class="header__link">Contact</a>
+                        <a href="" class="header__link">About</a>
+                    </nav>
+
+                    <div class="header__user">
+                        <a href="" class="header__link">Sign In</a>
+                        <div class="header__cart">
+                            <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 6V4.5C6 2.01469 7.97344 0 10.5 0C12.9844 0 15 2.01469 15 4.5V6H18.75C19.9922 6 21 7.00781 21 8.25V19.5C21 21.9844 18.9844 24 16.5 24H4.5C2.01469 24 0 21.9844 0 19.5V8.25C0 7.00781 1.00734 6 2.25 6H6ZM7.5 6H13.5V4.5C13.5 2.84297 12.1547 1.5 10.5 1.5C8.84531 1.5 7.5 2.84297 7.5 4.5V6ZM2.25 7.5C1.83562 7.5 1.5 7.8375 1.5 8.25V19.5C1.5 21.1547 2.84297 22.5 4.5 22.5H16.5C18.1547 22.5 19.5 21.1547 19.5 19.5V8.25C19.5 7.8375 19.1625 7.5 18.75 7.5H15V11.25C15 11.6625 14.6625 12 14.25 12C13.8375 12 13.5 11.6625 13.5 11.25V7.5H7.5V11.25C7.5 11.6625 7.1625 12 6.75 12C6.3375 12 6 11.6625 6 11.25V7.5H2.25Z"
+                                    fill="#2C3038"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav class="header__links">
-                <a href="" class="header__link">Torque Converters</a>
-                <a href="" class="header__link">Flexplates</a>
-                <a href="" class="header__link">Apparel & Gear</a>
-                <a href="" class="header__link">Service</a>               
-                <a href="" class="header__link">Tech</a>               
-                <a href="" class="header__link">Dealers</a>               
-                <a href="" class="header__link">Racers</a>
-                <a href="" class="header__link">News</a>
-                <a href="" class="header__link">Contact</a>
-                <a href="" class="header__link">About</a>
-            </nav>
-            <div class="header__user">
-                <a href="" class="header__link">Sign In</a>
-                <div class="header__cart">
-                    <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 6V4.5C6 2.01469 7.97344 0 10.5 0C12.9844 0 15 2.01469 15 4.5V6H18.75C19.9922 6 21 7.00781 21 8.25V19.5C21 21.9844 18.9844 24 16.5 24H4.5C2.01469 24 0 21.9844 0 19.5V8.25C0 7.00781 1.00734 6 2.25 6H6ZM7.5 6H13.5V4.5C13.5 2.84297 12.1547 1.5 10.5 1.5C8.84531 1.5 7.5 2.84297 7.5 4.5V6ZM2.25 7.5C1.83562 7.5 1.5 7.8375 1.5 8.25V19.5C1.5 21.1547 2.84297 22.5 4.5 22.5H16.5C18.1547 22.5 19.5 21.1547 19.5 19.5V8.25C19.5 7.8375 19.1625 7.5 18.75 7.5H15V11.25C15 11.6625 14.6625 12 14.25 12C13.8375 12 13.5 11.6625 13.5 11.25V7.5H7.5V11.25C7.5 11.6625 7.1625 12 6.75 12C6.3375 12 6 11.6625 6 11.25V7.5H2.25Z" fill="#2C3038"/>
-                    </svg>
+        </header>
+
+        <div class="homepage">
+            <div class="container">
+                <div class="promo-block" style="padding-top: 150px">
+                    <div class="title-block title-block_top">
+                        <div class="title-block__pretitle">4L60E LSX (’98+) Late</div>
+                        <h1 class="title-block__title">For Super Racing Cars</h1>
+                        <div class="title-block__subtitle">From $250 for the minimum and $1500 for the maximum</div>
+                        <a href="" class="title-block__link title-block__link_warning">
+                            <span>Learn more</span>
+                            <span class="arrow arrow-warning"></span>
+                        </a>
+                    </div>
+
+                    <img class="promo-block__background" src="./assets/img/homepage/main.webp" alt="" />
+                </div>
+
+                <div class="logos-block">
+                    <a href="">
+                        <img class="logos-block__img" src="./assets/img/homepage/logos/kennys.webp" alt="" />
+                    </a>
+                    <a href="">
+                        <img class="logos-block__img" src="./assets/img/homepage/logos/pro-torque.webp" alt="" />
+                    </a>
+                    <a href="">
+                        <img class="logos-block__img" src="./assets/img/homepage/logos/boninfante.webp" alt="" />
+                    </a>
+                    <a href="">
+                        <img class="logos-block__img" src="./assets/img/homepage/logos/boninfante-bs.webp" alt="" />
+                    </a>
+                    <a href="">
+                        <img class="logos-block__img" src="./assets/img/homepage/logos/kennys-2.webp" alt="" />
+                    </a>
+                </div>
+
+                <div class="promo-block">
+                    <div class="title-block title-block_top white">
+                        <div class="title-block__pretitle">A special line of converters</div>
+                        <h2 class="title-block__title">
+                            <img src="./assets/img/homepage/icons/flag.svg" alt="" />
+                            <span>Proudly made in the USA</span>
+                        </h2>
+                        <a href="" class="title-block__link title-block__link_white">
+                            <span>6 Products</span>
+                            <span class="arrow arrow-white"></span>
+                        </a>
+                    </div>
+
+                    <img class="promo-block__background" src="./assets/img/homepage/dark-promo.webp" alt="" />
+                </div>
+
+                <div class="promo-block">
+                    <div class="title-block title-block_left">
+                        <div class="title-block__pretitle">Created For Ford Motors</div>
+                        <h2 class="title-block__title">
+                            <span>Ford AOD C6</span>
+                        </h2>
+                        <div class="title-block__subtitle">From $250 for the minimum configuration</div>
+                        <a href="" class="title-block__link title-block__link_warning">
+                            <span>Buy Converter</span>
+                            <span class="arrow arrow-warning"></span>
+                        </a>
+                    </div>
+
+                    <img class="promo-block__background" src="./assets/img/homepage/golden-promo.webp" alt="" />
+                </div>
+
+                <div class="promo-grid">
+                    <div class="promo-grid__item">
+                        <div class="title-block title-block_top">
+                            <h3 class="title-block__title">
+                                All Apparel & Gear <br />
+                                Free Shipping
+                            </h3>
+                            <div class="title-block__subtitle">For orders in the USA</div>
+                            <a href="" class="title-block__link title-block__link_warning">
+                                <span>Learn more</span>
+                                <span class="arrow arrow-warning"></span>
+                            </a>
+                        </div>
+                        <img class="promo-grid__img" src="./assets/img/homepage/promo-grid/apparel.webp" alt="" />
+                    </div>
+
+                    <div class="promo-grid__item">
+                        <div class="title-block title-block_bottom white">
+                            <h3 class="title-block__title">A series of converters for very powerful cars</h3>
+                            <a href="" class="title-block__link title-block__link_white">
+                                <span>Learn more</span>
+                                <span class="arrow arrow-white"></span>
+                            </a>
+                        </div>
+                        <img class="promo-grid__img" src="./assets/img/homepage/promo-grid/car.webp" alt="" />
+                    </div>
+
+                    <div class="promo-grid__item">
+                        <div class="title-block title-block_top">
+                            <h3 class="title-block__title">
+                                Superflex Coyote <br />
+                                TH-400 Disk
+                            </h3>
+                            <div class="title-block__link-container">
+                                <a href="" class="title-block__link title-block__link_warning">
+                                    <span>Learn more</span>
+                                    <span class="arrow arrow-warning"></span>
+                                </a>
+                                <a href="" class="title-block__link title-block__link_warning">
+                                    <span>Buy</span>
+                                    <span class="arrow arrow-warning"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <img class="promo-grid__img" src="./assets/img/homepage/promo-grid/coyote-th400.webp" alt="" />
+                    </div>
+
+                    <div class="promo-grid__item">
+                        <div class="title-block title-block_bottom white">
+                            <h3 class="title-block__title">How LSXT Converters Help to Win Races</h3>
+                            <a href="" class="title-block__link title-block__link_white">
+                                <span>Learn more</span>
+                                <span class="arrow arrow-white"></span>
+                            </a>
+                        </div>
+                        <img class="promo-grid__img" src="./assets/img/homepage/promo-grid/races.webp" alt="" />
+                    </div>
+
+                    <div class="promo-grid__item">
+                        <div class="title-block title-block_top">
+                            <div class="title-block__pretitle warning">New product</div>
+                            <h3 class="title-block__title">Most Popular RED Nag-3</h3>
+                        </div>
+                        <img class="promo-grid__img" src="./assets/img/homepage/promo-grid/red-nag-3.webp" alt="" />
+                        <a href="" class="promo-grid__link_warning_bottom">
+                            <span>Learn more</span>
+                            <span class="arrow arrow-warning"></span>
+                        </a>
+                    </div>
+
+                    <div class="promo-grid__item">
+                        <div class="title-block title-block_top">
+                            <h3 class="title-block__title">Custom Torque Converters</h3>
+                            <div class="title-block__subtitle">Built Specifically for You and Your Application</div>
+                            <a href="" class="title-block__link title-block__link_warning">
+                                <span>Build Converter</span>
+                                <span class="arrow arrow-warning"></span>
+                            </a>
+                        </div>
+                        <img class="promo-grid__img" src="./assets/img/homepage/promo-grid/custom-converters.webp" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-</body>
+    </body>
 </html>
