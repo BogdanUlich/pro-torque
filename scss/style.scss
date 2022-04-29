@@ -108,6 +108,8 @@ $white: #ffffff;
 $background: #f5f5f7;
 $dark: #2c3038;
 $warning: #ce2329;
+$light-grey: #dddddd;
+$grey: #999999;
 $breakpoints: (
     "xs": 320px,
     "sm": 576px,
@@ -144,6 +146,29 @@ $breakpoints: (
 body {
     font-family: "SF Pro Display";
     overflow-x: hidden;
+}
+.hidden-md {
+    @include md {
+        display: none;
+    }
+}
+.arrow {
+    display: block;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    &-warning {
+        border-top: 2px solid $warning;
+        border-right: 2px solid $warning;
+    }
+    &-white {
+        border-top: 2px solid $white;
+        border-right: 2px solid $white;
+    }
+    &-dark {
+        border-top: 2px solid $dark;
+        border-right: 2px solid $dark;
+    }
 }
 .container {
     width: 100%;
@@ -245,20 +270,6 @@ body {
         }
     }
 }
-.arrow {
-    display: block;
-    height: 10px;
-    width: 10px;
-    transform: rotate(45deg);
-    &-warning {
-        border-top: 2px solid $warning;
-        border-right: 2px solid $warning;
-    }
-    &-white {
-        border-top: 2px solid $white;
-        border-right: 2px solid $white;
-    }
-}
 .title-block {
     color: $dark;
     margin: 0 auto;
@@ -276,6 +287,9 @@ body {
         top: 43px;
         left: 50%;
         transform: translateX(-50%);
+        @include md {
+            top: 27px;
+        }
     }
     &_left {
         position: absolute;
@@ -294,6 +308,15 @@ body {
         bottom: 70px;
         left: 50%;
         transform: translateX(-50%);
+        @include md {
+            bottom: 40px;
+        }
+    }
+    &_center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     &__pretitle {
         font-weight: 600;
@@ -313,6 +336,7 @@ body {
         gap: 20px;
         font-size: 48px;
         font-weight: 600;
+        line-height: 44px;
         @include xl {
             font-size: 44px;
         }
@@ -346,6 +370,26 @@ body {
         }
         @include xl {
             margin-top: 6px;
+        }
+    }
+    &__btn {
+        gap: 5px;
+        display: flex;
+        align-items: center;
+        height: 54px;
+        padding: 0 19px;
+        border-radius: 60px;
+        &_dark-bg_white-text {
+            background: $dark;
+            color: $white;
+        }
+        &_white-bg_warning-text {
+            background: $white;
+            color: $warning;
+        }
+        &_white-bg_dark-text {
+            background: $white;
+            color: $dark;
         }
     }
     @include lg {
@@ -485,3 +529,4 @@ body {
 
 @import "_header.scss";
 @import "_footer.scss";
+@import "_categories.scss";
