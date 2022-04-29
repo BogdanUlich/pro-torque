@@ -10,19 +10,21 @@
     <body>
         <header class="header">
             <div class="header__container container">
-                <a href="" class="header__logo">
-                    <img src="./assets/img/header/logo-dark.png" alt="logo" />
-                </a>
-                <div class="header__nav">
-                    <div class="header__menu">
-                        <svg width="25" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M24.1071 2H0.892857C0.399777 2 0 1.55 0 1C0 0.45 0.399777 0 0.892857 0H24.1071C24.5982 0 25 0.45 25 1C25 1.55 24.5982 2 24.1071 2ZM24.1071 10H0.892857C0.399777 10 0 9.55 0 9C0 8.45 0.399777 8 0.892857 8H24.1071C24.5982 8 25 8.45 25 9C25 9.55 24.5982 10 24.1071 10Z"
-                                fill="#2C3038"
-                            />
-                        </svg>
-                    </div>
+                <div class="header__menu">
+                    <svg class="header__menu-icon" width="25" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24.1071 2H0.892857C0.399777 2 0 1.55 0 1C0 0.45 0.399777 0 0.892857 0H24.1071C24.5982 0 25 0.45 25 1C25 1.55 24.5982 2 24.1071 2ZM24.1071 10H0.892857C0.399777 10 0 9.55 0 9C0 8.45 0.399777 8 0.892857 8H24.1071C24.5982 8 25 8.45 25 9C25 9.55 24.5982 10 24.1071 10Z"
+                            fill="#2C3038"
+                        />
+                    </svg>
+                </div>
 
+                <a href="" class="header__logo">
+                    <img class="header__logo-desktop" src="./assets/img/header/logo-desktop.png" alt="logo" />
+                    <img class="header__logo-mobile" src="./assets/img/header/logo-mobile.png" alt="logo" />
+                </a>
+
+                <div class="header__nav">
                     <div class="header__search">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -54,6 +56,7 @@
                                     fill="#2C3038"
                                 />
                             </svg>
+                            <div class="header__cart-count">10</div>
                         </div>
                     </div>
                 </div>
@@ -61,8 +64,8 @@
         </header>
 
         <div class="homepage">
-            <div class="container">
-                <div class="promo-block" style="padding-top: 150px">
+            <div class="promo-block main">
+                <div class="promo-block__container container">
                     <div class="title-block title-block_top">
                         <div class="title-block__pretitle">4L60E LSX (’98+) Late</div>
                         <h1 class="title-block__title">For Super Racing Cars</h1>
@@ -72,11 +75,12 @@
                             <span class="arrow arrow-warning"></span>
                         </a>
                     </div>
-
                     <img class="promo-block__background" src="./assets/img/homepage/main.webp" alt="" />
                 </div>
+            </div>
 
-                <div class="logos-block">
+            <div class="logos-block">
+                <div class="logos-block__container container">
                     <a href="">
                         <img class="logos-block__img" src="./assets/img/homepage/logos/kennys.webp" alt="" />
                     </a>
@@ -93,13 +97,18 @@
                         <img class="logos-block__img" src="./assets/img/homepage/logos/kennys-2.webp" alt="" />
                     </a>
                 </div>
+            </div>
 
-                <div class="promo-block">
+            <div class="promo-block promo-block_with-flag">
+                <div class="promo-block__container container">
                     <div class="title-block title-block_top white">
                         <div class="title-block__pretitle">A special line of converters</div>
                         <h2 class="title-block__title">
-                            <img src="./assets/img/homepage/icons/flag.svg" alt="" />
-                            <span>Proudly made in the USA</span>
+                            <img class="title-block__icon" src="./assets/img/homepage/icons/flag.svg" alt="" />
+                            <span class="title-block__text"
+                                >Proudly made in the
+                                <img class="title-block__icon_in-text" src="./assets/img/homepage/icons/flag.svg" alt="" /> USA</span
+                            >
                         </h2>
                         <a href="" class="title-block__link title-block__link_white">
                             <span>6 Products</span>
@@ -109,8 +118,10 @@
 
                     <img class="promo-block__background" src="./assets/img/homepage/dark-promo.webp" alt="" />
                 </div>
+            </div>
 
-                <div class="promo-block">
+            <div class="promo-block promo-block_golden">
+                <div class="promo-block__container container">
                     <div class="title-block title-block_left">
                         <div class="title-block__pretitle">Created For Ford Motors</div>
                         <h2 class="title-block__title">
@@ -121,12 +132,19 @@
                             <span>Buy Converter</span>
                             <span class="arrow arrow-warning"></span>
                         </a>
+                        <a href="" class="title-block__link title-block__link_white">
+                            <span>Buy Converter</span>
+                            <span class="arrow arrow-white"></span>
+                        </a>
                     </div>
 
                     <img class="promo-block__background" src="./assets/img/homepage/golden-promo.webp" alt="" />
+                    <img class="promo-block__background promo-block__background_sm" src="./assets/img/homepage/golden-promo-mobile.webp" alt="" />
                 </div>
+            </div>
 
-                <div class="promo-grid">
+            <div class="promo-grid">
+                <div class="promo-grid__container container">
                     <div class="promo-grid__item">
                         <div class="title-block title-block_top">
                             <h3 class="title-block__title">
@@ -206,9 +224,107 @@
                             </a>
                         </div>
                         <img class="promo-grid__img" src="./assets/img/homepage/promo-grid/custom-converters.webp" alt="" />
+                        <a href="" class="promo-grid__link_warning_bottom">
+                            <span>Build Converter</span>
+                            <span class="arrow arrow-warning"></span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__list">
+                    <div class="footer__block">
+                        <div class="footer__block-title">
+                            TORQUE CONVERTERS
+                            <span class="arrow arrow-white"></span>
+                        </div>
+                        <a href="" class="footer__block-link">Street/Strip Converters</a>
+                        <a href="" class="footer__block-link">Competition/Race Converters Pro</a>
+                        <a href="" class="footer__block-link">Diesel Converters (up to 1,500hp)</a>
+                        <a href="" class="footer__block-link">Parts & Service</a>
+                        <a href="" class="footer__block-link">Custom-Built Torque Converters</a>
+                    </div>
+
+                    <div class="footer__block footer__block_title-only">
+                        <a href="" class="footer__block-title">FLEXPLATES</a>
+                    </div>
+
+                    <div class="footer__block footer__block_title-only">
+                        <a href="" class="footer__block-title">APPAREL & GEAR</a>
+                    </div>
+
+                    <div class="footer__block">
+                        <div class="footer__block-title">
+                            TECH
+                            <span class="arrow arrow-white"></span>
+                        </div>
+                        <a href="" class="footer__block-link">Warranty Information</a>
+                        <a href="" class="footer__block-link">Quote a Custom-Built Torque Converter</a>
+                        <a href="" class="footer__block-link">Frequently Asked Questions</a>
+                        <a href="" class="footer__block-link">Tech Documents</a>
+                        <a href="" class="footer__block-link">CAD/CAM – Product Development</a>
+                        <a href="" class="footer__block-link">Data Acquisition & Testing</a>
+                        <a href="" class="footer__block-link">Diagnosing Acquired Data</a>
+                        <a href="" class="footer__block-link">Torque Converter Definitions, Parts & Comparisons</a>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__block-title">
+                            SERVICE
+                            <span class="arrow arrow-white"></span>
+                        </div>
+                        <a href="" class="footer__block-link">Custom-Built Torque Converters</a>
+                        <a href="" class="footer__block-link">Torque Converter Service Request</a>
+                        <a href="" class="footer__block-link">Warranty Information</a>
+                    </div>
+
+                    <div class="footer__block">
+                        <div class="footer__block-title">
+                            NEWS
+                            <span class="arrow arrow-white"></span>
+                        </div>
+                        <a href="" class="footer__block-link">All ProTorque News</a>
+                        <a href="" class="footer__block-link">Racer News</a>
+                        <a href="" class="footer__block-link">Product News</a>
+                    </div>
+
+                    <div class="footer__block">
+                        <div class="footer__block-title">
+                            DEALERS
+                            <span class="arrow arrow-white"></span>
+                        </div>
+                        <a href="" class="footer__block-link">Find a Dealer</a>
+                        <a href="" class="footer__block-link">Dealer Sign Up</a>
+                    </div>
+
+                    <div class="footer__block">
+                        <div class="footer__block-title">
+                            RACERS
+                            <span class="arrow arrow-white"></span>
+                        </div>
+                        <a href="" class="footer__block-link">Accomplishment Submission Form</a>
+                        <a href="" class="footer__block-link">Women of Team ProTorque</a>
+                        <a href="" class="footer__block-link">ProTorque Videos</a>
+                    </div>
+                </div>
+
+                <hr class="footer__line" />
+
+                <div class="footer__info">
+                    <a href="" class="footer__info-item"
+                        >Adress: 555 Industrial Park Dr., <br />
+                        Yeadon, PA 19050
+                    </a>
+                    <a href="tel:+6312188700" class="footer__info-item">Phone: (631) 218-8700</a>
+                    <a href="mailto:sales@ProTorque.com" class="footer__info-item">Email: sales@ProTorque.com</a>
+                    <div class="footer__info-item">
+                        Business hours: <br />
+                        Mon - Fri / 9:00AM - 5:30PM
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

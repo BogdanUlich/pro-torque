@@ -1,0 +1,87 @@
+.footer {
+    padding: 30px 0 40px;
+    background: $dark;
+    color: $white;
+    font-size: 18px;
+    @include md {
+        padding: 30px 0;
+    }
+    &__list {
+        columns: 4;
+        @include md {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__block {
+        margin-bottom: 33px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @include md {
+            margin: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+            padding: 12px 0;
+        }
+        &_title-only {
+            margin-bottom: 23px;
+            @include md {
+                margin: 0;
+            }
+        }
+        &-title {
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-bottom: 3px;
+            .arrow {
+                display: none;
+            }
+            @include md {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 0;
+                .arrow {
+                    display: block;
+                }
+            }
+        }
+        &-link {
+            color: $white;
+            line-height: 20px;
+            @include lg {
+                font-size: 16px;
+            }
+            @include md {
+                display: none;
+            }
+        }
+    }
+    &__line {
+        background: #444444;
+        height: 1px;
+        margin: 40px 0 30px;
+        @include md {
+            background: transparent;
+            margin: 20px 0;
+        }
+    }
+    &__info {
+        columns: 4;
+        &-item {
+            display: block;
+            min-height: 48px;
+            color: $white;
+            line-height: 24px;
+            @include md {
+                min-height: auto;
+            }
+        }
+        @include md {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+    }
+}
