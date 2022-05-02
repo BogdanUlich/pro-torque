@@ -146,11 +146,9 @@ $breakpoints: (
 body {
     font-family: "SF Pro Display";
     overflow-x: hidden;
-}
-.hidden-md {
-    @include md {
-        display: none;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .arrow {
     display: block;
@@ -168,6 +166,45 @@ body {
     &-dark {
         border-top: 2px solid $dark;
         border-right: 2px solid $dark;
+    }
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    @include sm {
+        margin-top: 15px;
+        width: 100%;
+        .btn {
+            flex: 1 1 50%;
+        }
+    }
+}
+.btn {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    height: 54px;
+    padding: 0 19px;
+    border-radius: 60px;
+    &_dark-bg_white-text {
+        background: $dark;
+        color: $white;
+    }
+    &_white-bg_warning-text {
+        background: $white;
+        color: $warning;
+    }
+    &_white-bg_dark-text {
+        background: $white;
+        color: $dark;
+    }
+    &_warning-bg_white-text {
+        background: $warning;
+        color: $white;
+    }
+    &.small {
+        padding: 0 22px;
     }
 }
 .container {
@@ -279,6 +316,16 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    @include lg {
+        gap: 11px;
+    }
+    @include md {
+        width: 100%;
+        max-width: 375px;
+    }
+    @include sm {
+        padding: 0 12px;
+    }
     &.white {
         color: $white;
     }
@@ -371,33 +418,6 @@ body {
         @include xl {
             margin-top: 6px;
         }
-    }
-    &__btn {
-        gap: 5px;
-        display: flex;
-        align-items: center;
-        height: 54px;
-        padding: 0 19px;
-        border-radius: 60px;
-        &_dark-bg_white-text {
-            background: $dark;
-            color: $white;
-        }
-        &_white-bg_warning-text {
-            background: $white;
-            color: $warning;
-        }
-        &_white-bg_dark-text {
-            background: $white;
-            color: $dark;
-        }
-    }
-    @include lg {
-        gap: 11px;
-    }
-    @include md {
-        width: 100%;
-        max-width: 375px;
     }
 } //title-block
 .logos-block {
@@ -525,8 +545,56 @@ body {
         }
     }
 } //promo-grid
+.column {
+    flex-direction: column;
+}
+.big-dark-btn {
+    display: flex;
+    background: $dark;
+    color: $white;
+    align-items: center;
+    justify-content: center;
+    height: 98px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.align-center {
+    align-items: center;
+}
+.hidden-lg {
+    @include lg {
+        display: none;
+    }
+}
+.hidden-md {
+    @include md {
+        display: none;
+    }
+}
+.hidden-sm {
+    @include sm {
+        display: none;
+    }
+}
+.flex-sm {
+    display: none;
+    @include sm {
+        display: flex;
+    }
+}
+.flex-md {
+    display: none;
+    @include md {
+        display: flex;
+    }
+}
 /*Общие стили*/
 
 @import "_header.scss";
 @import "_footer.scss";
 @import "_categories.scss";
+@import "_big-warning-btn.scss";
+@import "_news-block.scss";
+@import "_product-comparison.scss";
+@import "_subcategory.scss";
