@@ -1,0 +1,37 @@
+.slick-track {
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    gap: 7px;
+    li {
+        list-style: none;
+        &.slick-active {
+            button {
+                background: $warning;
+            }
+        }
+    }
+    button {
+        font-size: 0;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: $light-grey;
+    }
+}
+
+.slider {
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}

@@ -116,6 +116,13 @@
         text-align: center;
     }
     &__price {
+        display: flex;
+        gap: 2px;
         font-size: 32px;
+        &-cent {
+            padding-top: 5px;
+            font-size: 13px;
+            font-weight: 700;
+        }
     }
 }

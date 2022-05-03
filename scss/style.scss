@@ -107,6 +107,8 @@ h6 {
 $white: #ffffff;
 $background: #f5f5f7;
 $dark: #2c3038;
+$dark-grey: #202020;
+$black: #000001;
 $warning: #ce2329;
 $light-grey: #dddddd;
 $grey: #999999;
@@ -244,6 +246,7 @@ body {
         }
     }
     &__background {
+        width: 100%;
         max-width: 100%;
         height: 740px;
         object-fit: cover;
@@ -546,6 +549,7 @@ body {
     }
 } //promo-grid
 .column {
+    display: flex;
     flex-direction: column;
 }
 .big-dark-btn {
@@ -562,6 +566,36 @@ body {
 .align-center {
     align-items: center;
 }
+/*Общие стили*/
+
+@import "_header.scss";
+@import "_footer.scss";
+@import "_categories.scss";
+@import "_big-warning-btn.scss";
+@import "_news-block.scss";
+@import "_product-comparison.scss";
+@import "_subcategory.scss";
+@import "_product.scss";
+@import "_slider.scss";
+
+.block-sm {
+    display: none;
+    @include sm {
+        display: block;
+    }
+}
+.flex-sm {
+    display: none;
+    @include sm {
+        display: flex;
+    }
+}
+.flex-md {
+    display: none;
+    @include md {
+        display: flex;
+    }
+}
 .hidden-lg {
     @include lg {
         display: none;
@@ -577,24 +611,3 @@ body {
         display: none;
     }
 }
-.flex-sm {
-    display: none;
-    @include sm {
-        display: flex;
-    }
-}
-.flex-md {
-    display: none;
-    @include md {
-        display: flex;
-    }
-}
-/*Общие стили*/
-
-@import "_header.scss";
-@import "_footer.scss";
-@import "_categories.scss";
-@import "_big-warning-btn.scss";
-@import "_news-block.scss";
-@import "_product-comparison.scss";
-@import "_subcategory.scss";
